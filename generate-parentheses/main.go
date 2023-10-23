@@ -23,6 +23,9 @@ func generateParenthesis(n int) []string {
 	backtrack = func(opened, closed int) {
 		fmt.Println(stack)
 		// return condition
+		// append open or close to stack
+		// call backtrack to drill down on decision tree
+		// pop since stack is global var and it needs to be shared with other instances
 		if opened == closed && closed == n {
 			res = append(res, strings.Join(stack, ""))
 		}
