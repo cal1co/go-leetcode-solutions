@@ -32,6 +32,5 @@ func combinationSum(candidates []int, target int) [][]int {
 
 	}
 	backtrack(0, 0, curr)
-	fmt.Println(ans)
 	return ans
 }
